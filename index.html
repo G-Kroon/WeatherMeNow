@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="app-title">Weather App <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button></h1>
+  </header>
+  <main>
+    <form id="location-form" aria-label="Search for weather by city or coordinates">
+      <input type="text" id="location-input" placeholder="Enter city or ZIP code" aria-label="City or ZIP code" autocomplete="off" />
+      <button type="submit" aria-label="Search weather">Get Weather</button>
+      <button type="button" id="geo-btn" aria-label="Use my location">📍</button>
+    </form>
+    <div id="loading-indicator" aria-live="polite" hidden>Loading...</div>
+    <div id="error-message" aria-live="assertive" role="alert"></div>
+    <section id="cities-list" aria-label="Saved cities"></section>
+    <section id="weather-display" aria-label="Current weather"></section>
+    <section id="hourly-forecast" aria-label="Hourly forecast"></section>
+    <section id="weekly-forecast" aria-label="Weekly forecast"></section>
+    <section id="air-quality" aria-label="Air quality index"></section>
+    <section id="alerts-display" aria-label="Severe weather alerts"></section>
+    <section id="historical-display" aria-label="Historical weather"></section>
+    <section id="map-display" aria-label="Weather map"></section>
+  </main>
+  <footer>
+    <p>Powered by Github Pages, GKroon, OpenWeatherMap, AirVisual, and Leaflet.js</p>
+  </footer>
+</body>
+</html>

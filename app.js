@@ -1,6 +1,6 @@
 // API keys (replace with your own!)
 const OPENWEATHER_API_KEY = '3816398024e55202aff980be0b65c700';
-const AIRVISUAL_API_KEY = 'YOUR_AIRVISUAL_API_KEY';
+const AIRVISUAL_API_KEY = '961064f3-bcb2-492e-9ce8-7c4394b31699';
 
 // Utility: debounce
 function debounce(fn, delay) {
